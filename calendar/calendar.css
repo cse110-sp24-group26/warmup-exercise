@@ -1,0 +1,9 @@
+my-calendar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+my-calendar h2 {
+	color: white;
+	text-align: center;
+}
