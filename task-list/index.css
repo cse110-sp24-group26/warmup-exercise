@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    top: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.task-lists-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.task-list {
+    margin: 20px;
+    background-color: bisque;
+}
