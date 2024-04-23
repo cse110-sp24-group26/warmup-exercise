@@ -34,6 +34,8 @@ export function numDays(year, month) {
 				return 28;
 			}
 			break;
+		default:
+			return -1;
 	}
 		
 }
