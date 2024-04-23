@@ -4,11 +4,6 @@ my-day {
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
-	a {
-		color: black;
-		font-style: normal;
-		text-decoration: none;
-	}
 	button {
 		color: #141418;
 		background-color: white;
