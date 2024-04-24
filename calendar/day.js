@@ -1,24 +1,23 @@
 class Day extends HTMLElement {
+	static observedAttributes = ["year", "month", "day"];
+
 	constructor() {
 		super()
 	}
 
 	connectedCallback() {
 		const dayNum = parseInt(this.getAttribute("day"));
-		// Should add month attribute
 		const monthNum = parseInt(this.getAttribute("month"));
-		// Should add year attribute
 		const yearNum = parseInt(this.getAttribute("year"));
-		// Not needed
-		//const href = this.getAttribute("href");
 
 		this.appendChild(document.createElement("button"));
 		const button = document.getElementsByTagName("button")[dayNum - 1];
 		button.setAttribute("type", "button");
 		button.appendChild(document.createTextNode(`${dayNum}`));
-		button.onclick = function() {
+
+		this.onclick = function() {
 			if (document.getElementById("selected") != null){
-				selected = document.getElementById("selected");
+				let selected = document.getElementById("selected");
 				selected.removeAttribute("id");
 			}
 			this.setAttribute("id", "selected")
