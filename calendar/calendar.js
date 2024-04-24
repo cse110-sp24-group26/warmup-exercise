@@ -1,7 +1,7 @@
 import { numDays, dayOfWeek } from './util.js';
 
 const DAYS_IN_WEEK = 7;
-const COLUMN_HEADERS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sun"];
+const COLUMN_HEADERS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 /* attributes: month (e.g. "January") and year (e.g. "2024") */
 /* displays a calendar by showing a day for each day of the specified year and month */
