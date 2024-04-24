@@ -1,4 +1,4 @@
-			/* Day is a native web component */
+/* Day is a native web component */
 /* attributes: year (e.g. "2024"), month (e.g. "January"), and day ("e.g." "1", "31") */
 /* when this page is clicked, it will open a custom window for this day */
 class Day extends HTMLElement {
