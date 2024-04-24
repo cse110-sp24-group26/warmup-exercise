@@ -1,0 +1,84 @@
+#label5 {
+    color:red;
+    grid-row:3;
+    grid-column:1;
+}
+
+#label4 {
+    color:blue;
+    grid-row:3;
+    grid-column:2;
+}
+
+#label3 {
+    color:gray;
+    grid-row:3;
+    grid-column:3;
+}
+
+#label2 {
+    color:orange;
+    grid-row:3;
+    grid-column:4;
+}
+
+#label1 {
+    color:purple;
+    grid-row:3;
+    grid-column:5;
+}
+
+#option5 {
+    grid-row:2;
+    grid-column:1;
+}
+
+#option4 {
+    grid-row:2;
+    grid-column:2;
+}
+
+#option3 {
+    grid-row:2;
+    grid-column:3;
+}
+
+#option2 {
+    grid-row:2;
+    grid-column:4;
+}
+
+#option1 {
+    grid-row:2;
+    grid-column:5;
+}
+
+#container {
+    display: grid;
+    justify-items: center;
+}
+
+#emoji5 {
+    grid-row:1;
+    grid-column:1;
+}
+
+#emoji4 {
+    grid-row:1;
+    grid-column:2;
+}
+
+#emoji3 {
+    grid-row:1;
+    grid-column:3;
+}
+
+#emoji2 {
+    grid-row:1;
+    grid-column:4;
+}
+
+#emoji1 {
+    grid-row:1;
+    grid-column:5;
+}
