@@ -1,9 +1,11 @@
 import { numDays, dayOfWeek } from './util.js';
 
 const DAYS_IN_WEEK = 7;
-const COLUMN_HEADERS = ["S", "M", "T", "W", "T", "F", "S"];
+const COLUMN_HEADERS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sun"];
 
 class Calendar extends HTMLElement {
+	static observedAttributes = ["year", "month"];
+
 	constructor() {
 		super()
 	}
@@ -34,7 +36,8 @@ class Calendar extends HTMLElement {
 		for (let i = 1; i <= daysInMonth; ++i) {
 			const day = document.createElement("my-day");
 			day.setAttribute("day", i);
-			day.setAttribute("href", "https://www.google.com");
+			day.setAttribute("year", year);
+			day.setAttribute("month", month);
 			items.push(day);
 		}
 
