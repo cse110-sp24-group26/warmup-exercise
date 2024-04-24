@@ -12,13 +12,28 @@
 
   <script src="calendar.js" type="module" defer> </script>
   <script src="day.js" type="module" defer> </script>
+  <script src="tests.js" type="module"> </script>
 
-  <body>
-	<!-- Picker would go here, updating year and month attributes of #main-calendar -->
-	<form id="picker">
-	</form>
+  <body> 
+	<style>
+		div {
+			color: white;
+		}
+	</style>
 
+	<div> Day 1 Test (2024 January) </div>
+	<my-day year="2024" month="January" day="1"> </my-day>
+	<div> Day 31 Test (1970 June) </div>
+	<my-day year="1970" month="June" day="31"> </my-day>
+	
+	<div> Calendar with 2024 January </div>
 	<my-calendar id="main-calendar" year="2024" month="January"> 
+	</my-calendar>
+	<div> Calendar with 1970 June  </div>
+	<my-calendar id="main-calendar" year="1970" month="June"> 
+	</my-calendar>
+	<div> Calendar with 2024 February  </div>
+	<my-calendar id="main-calendar" year="2024" month="February"> 
 	</my-calendar>
   </body>
 </html>

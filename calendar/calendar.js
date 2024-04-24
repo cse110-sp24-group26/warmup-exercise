@@ -3,6 +3,9 @@ import { numDays, dayOfWeek } from './util.js';
 const DAYS_IN_WEEK = 7;
 const COLUMN_HEADERS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sun"];
 
+/* attributes: month (e.g. "January") and year (e.g. "2024") */
+/* displays a calendar by showing a day for each day of the specified year and month */
+/* dynamically updates based on changing months and years */
 class Calendar extends HTMLElement {
 	static observedAttributes = ["year", "month"];
 
@@ -10,6 +13,7 @@ class Calendar extends HTMLElement {
 		super()
 	}
 
+	/* reupdate entire calendar */
 	retree() {
 		const year = this.getAttribute("year");
 		const month = this.getAttribute("month");
