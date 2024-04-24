@@ -1,0 +1,30 @@
+my-day {
+	background-color: #1A1A1A;
+	border: solid 0.5px #333;
+	min-width: 20px;
+	min-height: 100px;
+	padding: 0px;
+	margin: 0px;
+
+	button {
+		text-align: right;
+		background-color: transparent;
+		color: #ccc;
+		height: 50px;
+		width: 100%;
+		border: none;
+		font-size: 18px;
+		font-family: var(--font);
+		font-weight: 100;
+		padding-right: 20px;
+	}
+}
+
+#selected {
+	button {
+		color: #77f;
+		font-weight: 500;
+	}
+	padding: 0px;
+	margin: 0px;
+}
