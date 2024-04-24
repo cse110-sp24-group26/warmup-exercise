@@ -3,20 +3,25 @@
   <head>
     <title>Sentiment Rating Widget</title>
     <!--add css file name to href here-->
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Links below for Raleway Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <h1>Rate your experience with Team 26:</h1>
+    <div class = "fieldsetwidth">
     <fieldset>
       <form>
+        <div class = "radiowidth">
         <p>😡 😞 😐 😊 😁</p>
         <input type="radio" name="sentiment" id="5">
         <input type="radio" name="sentiment" id="4">
         <input type="radio" name="sentiment" id="3">
         <input type="radio" name="sentiment" id="2">
         <input type="radio" name="sentiment" id="1">
-
+        </div>
         <br>
         <label for="5">Angry</label>
         <label for="4">Sad</label>
@@ -25,11 +30,14 @@
         <label for="1">Awesome</label>  
       </form>
     </fieldset>
+    </div>
 
     <!-- insert javascript value in [emotion] -->
+    <div class = "feelrating">
     <p>You feel [EMOTION] about Team 26.</p>
     <p>Thank you for rating us!</p>
-
+    </div>
+    
     <script src="script.js"></script>    
   </body>
 </html>
