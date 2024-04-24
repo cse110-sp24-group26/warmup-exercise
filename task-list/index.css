@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding: 10;
     box-sizing: border-box;
 }
 
@@ -15,11 +15,41 @@ h1 {
 .task-lists-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
 }
 
 .task-list {
     margin: 20px;
-    background-color: bisque;
+    background-color: #fff9b1;
+    padding: 1%;
+    border-style: solid;
+    border-width: thin;
+    box-shadow: 10px 10px 10px lightgray;
+
+}
+
+.task-list-title{
+    text-align: center;
+    padding-bottom: 5%;
+    
+}
+
+.task{
+    border:20%;
+    background-color: #FFDE07;
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.task-description{
+    padding: 5px;
+}
+
+.due-date{
+    font-weight: bold;
+    font-variant: small-caps;
 }
