@@ -10,8 +10,8 @@ class Day extends HTMLElement {
 
 	connectedCallback() {
 		const dayNum = parseInt(this.getAttribute("day"));
-		const monthNum = parseInt(this.getAttribute("month"));
-		const yearNum = parseInt(this.getAttribute("year"));
+		const month = this.getAttribute("month");
+		const year = parseInt(this.getAttribute("year"));
 
 		const button = document.createElement("button");
 		button.setAttribute("type", "button");
@@ -20,12 +20,17 @@ class Day extends HTMLElement {
 
 		this.onclick = function() {
 			if (document.getElementById("selected") != null){
-				let selected = document.getElementById("selected");
+				const selected = document.getElementById("selected");
 				selected.removeAttribute("id");
 			}
+			if (document.getElementById("form") != null){
+				const old_form = document.getElementById("form")
+				old_form.remove()
+			}
 			this.setAttribute("id", "selected")
-			var win = window.open("index.html","","popup, width=800, height = 600")
-			win.document.write(`<h1> Day ${dayNum} </h1>`)
+			calendar.insertAdjacentHTML("afterend", `<section id=form> <h1> ${month} ${dayNum}, ${year} </h1>
+			<form><fieldset><textarea></textarea><br>
+			<button>Save Entry</button></fieldset></form></section>`);
 		}
 	}
 }
