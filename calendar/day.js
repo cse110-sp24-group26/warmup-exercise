@@ -1,24 +1,26 @@
+/* Day is a native web component */
+/* attributes: year (e.g. "2024"), month (e.g. "January"), and day ("e.g." "1", "31") */
+/* when this page is clicked, it will open a custom window for this day */
 class Day extends HTMLElement {
+	static observedAttributes = ["year", "month", "day"];
+
 	constructor() {
 		super()
 	}
 
 	connectedCallback() {
 		const dayNum = parseInt(this.getAttribute("day"));
-		// Should add month attribute
 		const monthNum = parseInt(this.getAttribute("month"));
-		// Should add year attribute
 		const yearNum = parseInt(this.getAttribute("year"));
-		// Not needed
-		//const href = this.getAttribute("href");
 
-		this.appendChild(document.createElement("button"));
-		const button = document.getElementsByTagName("button")[dayNum - 1];
+		const button = document.createElement("button");
 		button.setAttribute("type", "button");
 		button.appendChild(document.createTextNode(`${dayNum}`));
-		button.onclick = function() {
+		this.appendChild(button);
+
+		this.onclick = function() {
 			if (document.getElementById("selected") != null){
-				selected = document.getElementById("selected");
+				let selected = document.getElementById("selected");
 				selected.removeAttribute("id");
 			}
 			this.setAttribute("id", "selected")

@@ -12,11 +12,33 @@
 
   <script src="calendar.js" type="module" defer> </script>
   <script src="day.js" type="module" defer> </script>
+  <script src="picker.js" defer> </script>
 
   <body>
-	<!-- Picker would go here, updating year and month attributes of #main-calendar -->
-	<div id="picker">
-	</div>
+	<!-- Picker goes here, updating year and month attributes of #main-calendar -->
+	<form id="picker">
+		<select id="picker-month" >
+			<option value="January"> January </option>
+			<option value="February"> February </option>
+			<option value="March"> March </option>
+			<option value="April"> April </option>
+			<option value="May"> May </option>
+			<option value="June"> June </option>
+			<option value="July"> July </option>
+			<option value="August"> August </option>
+			<option value="September"> September </option>
+			<option value="October"> October </option>
+			<option value="November"> November </option>
+			<option value="December"> December </option>
+		</select>
+
+		<select id="picker-year">
+			<option value="2024"> 2024 </option>
+			<option value="2024"> 2023 </option>
+			<option value="2022"> 2022 </option>
+			<option value="2021"> 2021 </option>
+		<select>
+	</form>
 
 	<my-calendar id="main-calendar" year="2024" month="January"> 
 	</my-calendar>
