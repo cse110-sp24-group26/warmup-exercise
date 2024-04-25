@@ -83,3 +83,20 @@ h1 {
     transform: scale(1.5); /* Larger size when checked */ 
     box-shadow: 0 0 20px #db5903; /* Glow effect 1 ISSUE GLOW AROUND BECASUE OF EMOJI BOX */    
 }
+
+.emoji-label {
+    cursor: pointer;
+    font-size: 32px; /* Initial size */
+    transition: transform 0.2s ease; /* Smooth transition */
+    border-radius: 50%;
+    outline: none; /* Remove default focus outline */
+}
+  
+/* When the corresponding radio button is checked */
+.emoji-input:checked + .emoji-label,
+.emoji-label:focus,
+.emoji-label:active {
+    transform: scale(1.5); /* Larger size when checked or focused */
+    box-shadow: 0 0 20px #ff6600; /* Glow effect */
+}
+
