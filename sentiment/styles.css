@@ -1,0 +1,49 @@
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: auto;
+}
+
+body {
+    padding-top: 12%;
+}
+
+/* Add background color to emotion labels */
+label {
+    background-color: steelblue;
+    margin:24.75px;
+}
+
+/* Change background color of main header, color of the header's text */
+h1 {
+    background-color: steelblue;
+    text-align: center;
+    width: 35.25vw;
+    color: #abc;
+}
+
+/* Make the box size smaller */
+.fieldsetwidth {
+    width: 35.25vw;
+}
+
+/* Change size/position of emojis */
+.radiowidth {
+    text-align: center;
+    font-size: 1.75rem;
+    padding-top: 2%;
+    transform: scale(1.5);
+}
+
+/* Change the size of the buttons, position */
+.radiowidth input[type="radio"] {
+    transform: scale(1.25); 
+    margin-right: 35px;
+}
+
+/* Text Below the Box */
+.feelrating {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 1.5rem;
+}
