@@ -1,6 +1,6 @@
 # Warmup Exercise
 
-We have three folders relating to the three distinct tasks. 
+We have three folders relating to the three distinct tasks. More documentation can be found in each of the respective folders.
 ## Sentiment
 The sentiment rating uses html, javascript, and css to display a selection of emotions that you can choose from. The selected value is dynamically updated
 ## Task List
