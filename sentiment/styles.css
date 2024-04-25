@@ -17,6 +17,7 @@ label {
 /* Change background color of main header, color of the header's text */
 h1 {
     background-color: steelblue;
+    text-align: center;
     width: 35.25vw;
     color: #abc;
 }
@@ -36,7 +37,7 @@ h1 {
 
 /* Change the size of the buttons, position */
 .radiowidth input[type="radio"] {
-    transform: scale(1.75); 
+    transform: scale(1.25); 
     margin-right: 35px;
 }
 
@@ -44,4 +45,5 @@ h1 {
 .feelrating {
     text-align: center;
     padding-top: 3%;
+    font-size: 1.5rem;
 }
