@@ -1,0 +1,85 @@
+
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: auto;
+}
+
+
+body {
+    padding-top: 12%;
+}
+
+
+/* Add background color to emotion labels */
+label {
+    background-color: steelblue;
+    margin:24.75px;
+}
+
+
+/* Change background color of main header, color of the header's text */
+h1 {
+    background-color: steelblue;
+    width: 35.25vw;
+    color: #abc;
+}
+
+
+/* Make the box size smaller */
+.fieldsetwidth {
+    width: 35.25vw;
+}
+
+
+/* Change size/position of emojis */
+.radiowidth {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Adjust the size of the emojis */
+.radiowidth .emoji-label {
+    font-size: 2.5rem; /* Adjust the font size of the emojis */
+    width: 5rem; /* Adjust the width of the container */
+    height: 5rem; /* Adjust the height of the container */
+    line-height: 5rem; /* Center the emoji vertically */
+    text-align: center; /* Center the emoji horizontally */
+}
+
+
+/* Text Below the Box */
+.feelrating {
+    text-align: center;
+    padding-top: 3%;
+}
+
+
+/* Styling for visually hidden radio buttons */
+
+.emoji-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Emoji container */
+.emoji-label {
+    cursor: pointer;
+    font-size: 3rem; /* Increase the font size for larger emojis */
+    width: 5rem; /* Increase the width of the box */
+    height: 5rem; /* Increase the height of the box */
+    line-height: 5rem; /* Center the emoji vertically */
+    text-align: center; /* Center the emoji horizontally */
+    transition: transform 0.2s ease; /* Smooth transition */
+    border-radius: 50%;
+}
+
+
+/* When the corresponding radio button is checked */
+.emoji-input:checked + .emoji-label {
+    transform: scale(1.5); /* Larger size when checked */ 
+    box-shadow: 0 0 20px #db5903; /* Glow effect 1 ISSUE GLOW AROUND BECASUE OF EMOJI BOX */    
+}

@@ -5,66 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sentiment Rating Widget</title>
   <link rel="stylesheet" href="style.css">  
-  <style>
-    /* Additional styles for emojis */
-    .emojis {
-      display: flex;
-      justify-content: space-around;
-    }
-    /* Styling for visually hidden radio buttons */
-    .emoji-input {
-      position: absolute;
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    /* Emoji container */
-    .emoji-label {
-      cursor: pointer;
-      font-size: 32px; /* Initial size */
-      transition: transform 0.2s ease; /* Smooth transition */
-      border-radius: 50%;
-    }
-    /* When the corresponding radio button is checked */
-    .emoji-input:checked + .emoji-label {
-      transform: scale(1.5); /* Larger size when checked */
-      box-shadow: 0 0 20px #ff6600; /* Glow effect 1 ISSUE GLOW AROUND BECASUE OF EMOJI BOX */    
-    }
-  </style>
 </head>
 <body>
   <h1>Rate your experience with Team 26:</h1>
-  <fieldset>
-    <form>
-      <div class="emojis">
-        <!-- Using emojis visually hidden radio buttons -->
-        <input type="radio" name="sentiment" id="emoji1" class="emoji-input">
-        <label for="emoji1" class="emoji-label" data-emotion="Angry">😡</label>
-
-
-        <input type="radio" name="sentiment" id="emoji2" class="emoji-input">
-        <label for="emoji2" class="emoji-label" data-emotion="Sad">😞</label>
-
-
-        <input type="radio" name="sentiment" id="emoji3" class="emoji-input">
-        <label for="emoji3" class="emoji-label" data-emotion="Neutral">😐</label>
-
-
-        <input type="radio" name="sentiment" id="emoji4" class="emoji-input">
-        <label for="emoji4" class="emoji-label" data-emotion="Happy">😊</label>
-
-
-        <input type="radio" name="sentiment" id="emoji5" class="emoji-input">
-        <label for="emoji5" class="emoji-label" data-emotion="Awesome">😁</label>
-      </div>
-    </form>
-  </fieldset>
+  <div class = "fieldsetwidth">
+    <fieldset>
+      <form>
+        <div class="radiowidth">
+          <!-- Using emojis visually hidden radio buttons -->
+          <input type="radio" name="sentiment" id="emoji1" class="emoji-input">
+          <label for="emoji1" class="emoji-label" data-emotion="Angry">😡</label>
+  
+  
+          <input type="radio" name="sentiment" id="emoji2" class="emoji-input">
+          <label for="emoji2" class="emoji-label" data-emotion="Sad">😞</label>
+  
+  
+          <input type="radio" name="sentiment" id="emoji3" class="emoji-input">
+          <label for="emoji3" class="emoji-label" data-emotion="Neutral">😐</label>
+  
+  
+          <input type="radio" name="sentiment" id="emoji4" class="emoji-input">
+          <label for="emoji4" class="emoji-label" data-emotion="Happy">😊</label>
+  
+  
+          <input type="radio" name="sentiment" id="emoji5" class="emoji-input">
+          <label for="emoji5" class="emoji-label" data-emotion="Awesome">😁</label>
+        </div>
+      </form>
+    </fieldset>
+  </div>
+  
 
 
   <!-- Text to display selected sentiment -->
+  <div class = "feelrating">
   <p id="selectedSentiment">You feel [EMOTION] about Team 26.</p>
   <p>Thank you for rating us!</p>
-
+  </div>
 
   <script src="script.js"></script>
 </body>
