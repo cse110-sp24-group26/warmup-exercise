@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sentiment Rating Widget</title>
-    <!--add css file name to href here-->
-    <link rel="stylesheet" href="styles.css">  
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Links below for Raleway Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List Widget</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
-    <h1>Rate your experience with Team 26:</h1>
-    <div class = "fieldsetwidth">
-    <fieldset>
-      <form>
-        <div class = "radiowidth">
-        <p>😡 😞 😐 😊 😁</p>
-        <input type="radio" name="sentiment" id="5">
-        <input type="radio" name="sentiment" id="4">
-        <input type="radio" name="sentiment" id="3">
-        <input type="radio" name="sentiment" id="2">
-        <input type="radio" name="sentiment" id="1">
-        </div>
-        <br>
-        <label for="5">Angry</label>
-        <label for="4">Sad</label>
-        <label for="3">Neutral</label>
-        <label for="2">Happy</label>
-        <label for="1">Awesome</label>  
-      </form>
-    </fieldset>
-    </div>
+    <h1>Tasks</h1>
 
-    <!-- insert javascript value in [emotion] -->
-    <div class = "feelrating">
-    <p>You feel [EMOTION] about Team 26.</p>
-    <p>Thank you for rating us!</p>
+    <div class="task-lists-container">
+      <div class="task-list">
+        <h2 class="task-list-title">Homework</h2>
+        <ul class="tasks">
+          <li class="task">
+            <h3 class="task-title">Math HW</h3>
+            <p class="task-description">
+              Study before doing, then review answers
+            </p>
+            <p class="due-date">Due: 4/23/24</p>
+          </li>
+          <li class="task">
+            <h3 class="task-title">GLBH Discussion post</h3>
+            <p class="task-description">Minimum 200 words, cite sources</p>
+            <p class="due-date">Due: 4/20/24</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="task-list">
+        <h2 class="task-list-title">Personal</h2>
+        <ul class="tasks">
+          <li class="task">
+            <h3 class="task-title">Prep food</h3>
+            <p class="task-description">Marinate meat for at least 30 min</p>
+            <p class="due-date">Due: 4/23/24</p>
+          </li>
+          <li class="task">
+            <h3 class="task-title">Sweep house</h3>
+            <p class="task-description">
+              Handle case that there's no description?
+            </p>
+            <p class="due-date">Due: 4/20/24</p>
+          </li>
+        </ul>
+      </div>
     </div>
-    
-    <script src="script.js"></script>    
   </body>
 </html>
-  
