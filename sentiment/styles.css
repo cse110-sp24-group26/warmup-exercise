@@ -19,6 +19,7 @@ h1 {
     background-color: steelblue;
     width: 35.25vw;
     color: #abc;
+    text-align: center;
 }
 
 /* Make the box size smaller */
@@ -44,4 +45,5 @@ h1 {
 .feelrating {
     text-align: center;
     padding-top: 3%;
+    font-size: 1.5rem;
 }
