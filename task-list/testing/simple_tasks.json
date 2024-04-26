@@ -1,0 +1,21 @@
+
+{
+    "title": "To Do List",
+    "subtasks" : [
+        {
+            "subtitle" : "MATH HW",
+            "due_date" : "4/23/24",
+            "description" : "Pages 1-5, odd questions, show work"
+        },
+        {
+            "subtitle" : "Discussion Post",
+            "due_date" : "4/20/24",
+            "description" : "At least 200 words, cite sources"
+        },
+        {
+            "subtitle" : "Watch Lectures",
+            "due_date" : "4/25/24",
+            "description" : "Week 3 CSE110 Lectures"
+        }
+    ]
+}

@@ -1,54 +1,71 @@
+/*Controls dist around all properties and contains items within border*/
 * {
-    margin:0;
-    padding: 10;
+    margin: 5px;
+    padding: 10px;
     box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* Alters all h1 text to be centered*/
 h1 {
     text-align: center;
-    top: 0;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
+/*Getting rid of bullet points of ul*/
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+/*Allows tasks to be next to each other and centered*/
 .task-lists-container {
     display: flex;
-    justify-content: space-around;
-    /* align-items: flex-start; */
-    /* flex-wrap: wrap; */
-}
+    justify-content: center;
 
+}
+/*Affects the characteristics of an indiviual category of tasks*/
 .task-list {
-    margin: 20px;
-    background-color: #fff9b1;
-    padding: 1%;
+    max-height: 70%;
+    margin: auto;
+    background-color: #333333; 
+    padding: 0.5%;
     border-style: solid;
     border-width: thin;
-    box-shadow: 10px 10px 10px lightgray;
-
+    border-color: whitesmoke;
+    border-radius: 30px;
+    box-shadow: 12px 12px 12px lightgray;
 }
-
-.task-list-title{
+/*Altering the apperance of titles of categories */
+.task-list-title {
     text-align: center;
     padding-bottom: 5%;
-    
+    color: white;
+    font-size: 30px;
 }
-
+/*Changing size of title of tasks*/
+.task-title {
+    font-size: 25px;
+}
+/*Affects the properties of a task(background and border) */
 .task{
     border:20%;
-    background-color: #FFDE07;
+    width: 100%;
+    background-color: #6ed7fac1;
     text-align: center;
     border-style: solid;
     border-width: thin;
-    padding: 5px;
+    padding: 20px;
     margin-bottom: 5px;
-}
+    border-radius: 10px;
 
+}
+/*Gives spacing for clarity of task discription*/
 .task-description{
     padding: 5px;
+    color: #3c3c3c;
+    font-size: 15px;
 }
-
+/*Altering the way the due date text is displayed*/
 .due-date{
     font-weight: bold;
     font-variant: small-caps;
