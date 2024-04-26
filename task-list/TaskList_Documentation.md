@@ -32,8 +32,8 @@ It also helps organize our thoughts visually to most effectively map out which t
 
 ## How to Setup/Demo
 
-** Installation: ** 
+**Installation:** 
 Fork repo or download code separately and host locally.
 
-** Configuration: **
+**Configuration:**
 Change details in json file or upload your own and change source of json file in javascript file. Which must be in the format of 
