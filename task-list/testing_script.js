@@ -24,9 +24,9 @@ fetch('./missing_subtask_info.json')
                     if(!(subtask.hasOwnProperty("subtitle") 
                             && subtask.hasOwnProperty("due_date") 
                             && subtask.hasOwnProperty("desription"))){
-                        window.alert("Invalid json file: please check the formating of your json file");        
-                            }
-                        
+                        window.alert("Invalid json file: please check the formating of your json file");
+                        break;        
+                    }
                     else{
                         //writing subtitle, due_date, and description to the page
                         out += `
