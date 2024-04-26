@@ -24,7 +24,7 @@ It also helps organize our thoughts visually to most effectively map out which t
 [multiple_tasks.json](multiple_tasks.json):
 - json file for jsonUpdater.js
 
-[jsonUpdater.json](jsonUpdater.json):
+[jsonUpdater.js](jsonUpdater.js):
 - Updates main page with tasks from json file (user input)
 
 [testing_script.js](testing_script.js)
