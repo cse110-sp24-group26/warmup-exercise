@@ -23,6 +23,11 @@ h1 {
     background-color: steelblue;
     width: 35.25vw;
     color: #abc;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 
