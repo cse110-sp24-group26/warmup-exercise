@@ -1,84 +1,107 @@
-#label5 {
-    color:red;
-    grid-row:3;
-    grid-column:1;
+
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: auto;
 }
 
-#label4 {
-    color:blue;
-    grid-row:3;
-    grid-column:2;
+
+body {
+    padding-top: 12%;
 }
 
-#label3 {
-    color:gray;
-    grid-row:3;
-    grid-column:3;
+
+/* Add background color to emotion labels */
+label {
+    background-color: steelblue;
+    margin:24.75px;
 }
 
-#label2 {
-    color:orange;
-    grid-row:3;
-    grid-column:4;
+
+/* Change background color of main header, color of the header's text */
+h1 {
+    background-color: steelblue;
+    width: 35.25vw;
+    color: #abc;
+    text-align: center;
 }
 
-#label1 {
-    color:purple;
-    grid-row:3;
-    grid-column:5;
+p {
+    font-size: 1.5rem;
 }
 
-#option5 {
-    grid-row:2;
-    grid-column:1;
+
+/* Make the box size smaller */
+.fieldsetwidth {
+    width: 35.25vw;
 }
 
-#option4 {
-    grid-row:2;
-    grid-column:2;
+
+/* Change size/position of emojis */
+.radiowidth {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-#option3 {
-    grid-row:2;
-    grid-column:3;
+/* Adjust the size of the emojis */
+.radiowidth .emoji-label {
+    font-size: 3.5rem; /* Adjust the font size of the emojis */
+    width: 5rem; /* Adjust the width of the container */
+    height: 5rem; /* Adjust the height of the container */
+    line-height: 5rem; /* Center the emoji vertically */
+    text-align: center; /* Center the emoji horizontally */
 }
 
-#option2 {
-    grid-row:2;
-    grid-column:4;
+
+/* Text Below the Box */
+.feelrating {
+    text-align: center;
+    padding-top: 3%;
 }
 
-#option1 {
-    grid-row:2;
-    grid-column:5;
+
+/* Styling for visually hidden radio buttons */
+
+.emoji-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-#container {
-    display: grid;
-    justify-items: center;
+/* Emoji container */
+.emoji-label {
+    cursor: pointer;
+    font-size: 3rem; /* Increase the font size for larger emojis */
+    width: 5rem; /* Increase the width of the box */
+    height: 5rem; /* Increase the height of the box */
+    line-height: 5rem; /* Center the emoji vertically */
+    text-align: center; /* Center the emoji horizontally */
+    transition: transform 0.2s ease; /* Smooth transition */
+    border-radius: 50%;
 }
 
-#emoji5 {
-    grid-row:1;
-    grid-column:1;
+
+/* When the corresponding radio button is checked */
+.emoji-input:checked + .emoji-label {
+    transform: scale(1.5); /* Larger size when checked */ 
+    box-shadow: 0 0 20px #db5903; /* Glow effect 1 ISSUE GLOW AROUND BECASUE OF EMOJI BOX */    
 }
 
-#emoji4 {
-    grid-row:1;
-    grid-column:2;
+.emoji-label {
+    cursor: pointer;
+    font-size: 32px; /* Initial size */
+    transition: transform 0.2s ease; /* Smooth transition */
+    border-radius: 50%;
+    outline: none; /* Remove default focus outline */
+}
+  
+/* When the corresponding radio button is checked */
+.emoji-input:checked + .emoji-label,
+.emoji-label:focus,
+.emoji-label:active {
+    transform: scale(1.5); /* Larger size when checked or focused */
+    box-shadow: 0 0 20px #ff6600; /* Glow effect */
 }
 
-#emoji3 {
-    grid-row:1;
-    grid-column:3;
-}
-
-#emoji2 {
-    grid-row:1;
-    grid-column:4;
-}
-
-#emoji1 {
-    grid-row:1;
-    grid-column:5;
-}

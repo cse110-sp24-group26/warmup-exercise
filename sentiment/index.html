@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sentiment Rating Widget</title>
-    <!--add css file name to href here-->
-    <link rel="stylesheet" href="style.css">  
-  </head>
-
-  <body>
-    <h1>Rate your experience with Team 26:</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Rating Widget</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <h1>Rate your experience with Team 26:</h1>
+  <div class = "fieldsetwidth">
     <fieldset>
       <form>
-        <div id="container">
-          <p id="emoji5">😡</p>
-          <p id="emoji4">😞</p>
-          <p id="emoji3">😐</p>
-          <p id="emoji2">😊</p>
-          <p id="emoji1">😁</p>
+        <div class="radiowidth">
+        <!-- Using emojis visually hidden radio buttons -->
+        <input type="radio" name="sentiment" id="emoji1" class="emoji-input" tabindex="1">
+        <label for="emoji1" class="emoji-label" data-emotion="Angry" tabindex="1">😡</label>
 
-          <input type="radio" name="sentiment" id="option5">
-          <input type="radio" name="sentiment" id="option4">
-          <input type="radio" name="sentiment" id="option3">
-          <input type="radio" name="sentiment" id="option2">
-          <input type="radio" name="sentiment" id="option1">
 
-          <br>
-          <label id="label5" for="option5">Angry</label>
-          <label id="label4" for="option4">Sad</label>
-          <label id="label3" for="option3">Neutral</label>
-          <label id="label2" for="option2">Happy</label>
-          <label id="label1" for="option1">Awesome</label>  
+        <input type="radio" name="sentiment" id="emoji2" class="emoji-input" tabindex="2">
+        <label for="emoji2" class="emoji-label" data-emotion="Sad" tabindex="2">😞</label>
+
+
+        <input type="radio" name="sentiment" id="emoji3" class="emoji-input" tabindex="3">
+        <label for="emoji3" class="emoji-label" data-emotion="Neutral" tabindex="3">😐</label>
+
+
+        <input type="radio" name="sentiment" id="emoji4" class="emoji-input" tabindex="4">
+        <label for="emoji4" class="emoji-label" data-emotion="Happy" tabindex="4">😊</label>
+
+
+        <input type="radio" name="sentiment" id="emoji5" class="emoji-input" tabindex="5">
+        <label for="emoji5" class="emoji-label" data-emotion="Awesome" tabindex="5">😁</label>
         </div>
       </form>
     </fieldset>
-
-    <!-- insert javascript value in [emotion] -->
-    <p>You feel [EMOTION] about Team 26.</p>
-    <p>Thank you for rating us!</p>
-
-    <script src="script.js"></script>    
-  </body>
-</html>
+  </div>
   
+
+
+  <!-- Text to display selected sentiment -->
+  <div class="feelrating" id="feelRating" style="display: none;">
+  <p id="selectedSentiment">You feel [EMOTION] about Team 26.</p>
+  <p>Thank you for rating us!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
