@@ -4,7 +4,7 @@
 To use the task list, import the relevant json file to be read into `jsonUpdater.js` file which will dynamically update the page to display the contents of the json file. It is important that the json file that is used follows the set format, as any invalid format will not display and will instead prompt the user to adjust the respective json file. Assuming a valid json file is provided, the task list will display the main titles/categories of each task, followed by subtask titles and their corresponding due date and description.
 
 
-**Introduction:**
+**Introduction:**<br>
 This is a simple task list widget that allows you to create separate lists with tasks under each list.
 Each task has its own description and due date that can be initialized through user input.
 This task lists’ main functionality is to jot down, categorize, and remind us of our important tasks with their due dates and details.
