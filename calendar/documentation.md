@@ -1,0 +1,4 @@
+# Documentation
+To use the calendar, simply import the script `calendar.js` as a module. From there, you can use the native web component `<my-calendar>` with the attributes `year` (e.g. "2024") and `month` (e.g. "January"). The calendar reacts to updates to these attributes dynamically. The calendar displays a list of days subject to the parameters. It makes sure that the displayed weekdays and overall calendar structure matches that of the Gregorian calendar. From here, a user can click on any of the displayed days. If so, that day will be marked as special and a form will be displayed below the calendar allowing the user to input notes about the day. For now, this data is not persistent.
+
+You are not meant to use the `<my-day>`, it is an internal-only component used for handling a single day of the calendar. Likewise, `util.js` is meant for internal use only.

@@ -28,3 +28,39 @@ my-day {
 	padding: 0px;
 	margin: 0px;
 }
+
+#form {
+	background-color: #1A1A1A;
+	border: solid 0.5px #333;
+	color: #ccc;
+	padding: 50px;
+
+	h1 {
+		font-weight: normal;
+		margin-top: 0px;
+		color: white;
+	}
+	
+	textarea{
+		background-color: #1A1A1A;
+		border: solid 0.5px #333;
+		color: #ccc;
+		width: 800px;
+		height: 500px;
+	}
+
+	fieldset {
+		border: none;
+		padding-left: 0%;
+		margin: 0%;
+	}
+
+	button {
+		background-color: #1A1A1A;
+		border: solid 0.5px #333;
+		color: #ccc;
+		width: 100px;
+		height: 50px;
+		margin-top: 10px;
+	}
+}
