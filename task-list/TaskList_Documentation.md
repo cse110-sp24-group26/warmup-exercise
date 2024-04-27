@@ -52,6 +52,8 @@ Change details in json file or upload your own and change source of json file in
 **Example:** Pictures showing what a json file should look like, where to update the source of the script, etc.
 
 ## Testing
-The aspect of our product that was subject to change from the user was the input of the json file which in turn was the focus of our testing.
+The of our product that was subject to change from the user was the input of the json file which in turn was the focus of our testing.
 
 **Correctly formatted file:**  It was important to check the expected case of a correctly formatted file which would result in each task being properly displayed on the web page.
+
+**File with missing elements:** An error will be thrown prompting the user to provide a valid json file with the correct strucutre.
